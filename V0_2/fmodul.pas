@@ -8,9 +8,13 @@ uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs;
 
 type
+
+  { TMainForm }
+
   TMainForm = class(TForm)    //Главная форма
+    procedure FormCreate(Sender: TObject);
   private
-    { private declarations }
+    myList : TList;
   public
     { public declarations }
   end;
@@ -52,35 +56,38 @@ type
   private
     leftValue : byte;         //Одна часть фишки с очками
     rigthValue : byte;        //Вторая часть фишки с очками
-  public
     leftChip : Chip;          //Отвечает за соседнюю левую фишку
     rightChip : Chip;         //Отвечает за соседнюю правую фишку
+  public
+    property LValue : byte
+             read leftValue;
+    property RValue : byte
+             read rightValue;
 
-    constructor Create(lValue : byte; rValue : byte);
+    constructor Create(const leftValue : byte;
+                       const rigthValue : byte);
     //Конструктор, заполняются очки фишки
 
     function IsDouble : boolean;
     //Является ли фишка дублем
   end;
 
-
-type
-  TListChips = ^ListChips;    //Указатель на список фишек
-
-  ListChips = record          //Список фишек
-    TChip : Chip;             //Сама фишка
-    prev : TListChips;        //Предыдущая фишка
-    next : TListChips;        //Следующая фишка
-  end;
-
 implementation
 
 {$R *.lfm}
 
-constructor Chip.Create(lValue : byte; rValue : byte);
+{ TMainForm }
+
+procedure TMainForm.FormCreate(Sender: TObject);
 begin
-  self.leftValue := lValue;
-  self.rigthValue := rValue;
+
+end;
+
+constructor Chip.Create(const leftValue : byte;
+                        const rigthValue : byte);
+begin
+  self.leftValue := leftValue;
+  self.rigthValue := rigthValue;
 end;
 
 function Chip.IsDouble : boolean;

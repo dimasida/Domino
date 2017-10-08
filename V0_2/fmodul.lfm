@@ -5,5 +5,6 @@ object MainForm: TMainForm
   Width = 1360
   BorderStyle = bsToolWindow
   Caption = 'Домино'
+  OnCreate = FormCreate
   LCLVersion = '1.6.0.4'
 end
