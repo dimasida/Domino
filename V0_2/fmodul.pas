@@ -12,7 +12,6 @@ type
   { TMainForm }
 
   TMainForm = class(TForm)    //Главная форма
-    procedure FormCreate(Sender: TObject);
   private
     myList : TList;
   public
@@ -55,7 +54,7 @@ type
   Chip = class                //Фишка
   private
     leftValue : byte;         //Одна часть фишки с очками
-    rigthValue : byte;        //Вторая часть фишки с очками
+    rightValue : byte;        //Вторая часть фишки с очками
     leftChip : Chip;          //Отвечает за соседнюю левую фишку
     rightChip : Chip;         //Отвечает за соседнюю правую фишку
   public
@@ -64,8 +63,8 @@ type
     property RValue : byte
              read rightValue;
 
-    constructor Create(const leftValue : byte;
-                       const rigthValue : byte);
+    constructor Create(const TLeftValue : byte;
+                       const TRightValue : byte);
     //Конструктор, заполняются очки фишки
 
     function IsDouble : boolean;
@@ -78,29 +77,20 @@ implementation
 
 { TMainForm }
 
-procedure TMainForm.FormCreate(Sender: TObject);
+constructor Chip.Create(const TLeftValue : byte;
+                        const TRightValue : byte);
 begin
-
-end;
-
-constructor Chip.Create(const leftValue : byte;
-                        const rigthValue : byte);
-begin
-  self.leftValue := leftValue;
-  self.rigthValue := rigthValue;
+  self.leftValue := TLeftValue;
+  self.rightValue := TRightValue;
 end;
 
 function Chip.IsDouble : boolean;
 begin
-  if (self.leftValue = self.rigthValue) then
+  if (self.leftValue = self.rightValue) then
      IsDouble := true else
      IsDouble := false;
 end;
 
-procedure CreateListChips;
-begin
-
-end;
 
 end.
 
