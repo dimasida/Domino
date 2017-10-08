@@ -1,0 +1,9 @@
+object MainForm: TMainForm
+  Left = 1358
+  Height = 705
+  Top = -8
+  Width = 1360
+  BorderStyle = bsToolWindow
+  Caption = 'Домино'
+  LCLVersion = '1.6.0.4'
+end

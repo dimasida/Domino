@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="Domino.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="22"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="fmodul.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FModul"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="45"/>
+        <CursorPos X="17" Y="56"/>
+        <ComponentState Value="2"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="nstruct.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="NStruct"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="47"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="10" HistoryIndex="9">
+      <Position1>
+        <Filename Value="fmodul.pas"/>
+        <Caret Line="27" Column="7"/>
+      </Position1>
+      <Position2>
+        <Filename Value="fmodul.pas"/>
+        <Caret Line="54" Column="24" TopLine="35"/>
+      </Position2>
+      <Position3>
+        <Filename Value="fmodul.pas"/>
+        <Caret Line="49" Column="15" TopLine="30"/>
+      </Position3>
+      <Position4>
+        <Filename Value="fmodul.pas"/>
+        <Caret Line="50" Column="15" TopLine="37"/>
+      </Position4>
+      <Position5>
+        <Filename Value="fmodul.pas"/>
+        <Caret Line="66" Column="28" TopLine="35"/>
+      </Position5>
+      <Position6>
+        <Filename Value="fmodul.pas"/>
+        <Caret Line="63" Column="34" TopLine="36"/>
+      </Position6>
+      <Position7>
+        <Filename Value="fmodul.pas"/>
+        <Caret Line="66" Column="10" TopLine="36"/>
+      </Position7>
+      <Position8>
+        <Filename Value="fmodul.pas"/>
+        <Caret Column="39"/>
+      </Position8>
+      <Position9>
+        <Filename Value="fmodul.pas"/>
+        <Caret Line="68" Column="2" TopLine="52"/>
+      </Position9>
+      <Position10>
+        <Filename Value="fmodul.pas"/>
+        <Caret Line="55" Column="23" TopLine="47"/>
+      </Position10>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
